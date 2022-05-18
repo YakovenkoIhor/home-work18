@@ -1,0 +1,89 @@
+.ball-section{
+    height: 675px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ball-section img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.grass-section{
+    height: 50px;
+    max-width: 100%;
+    background: url(./img/grass.jpg);
+    background-size: contain;
+}
+
+@keyframes ball{
+    0%  {
+        left: 0;
+        top: 0; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    10%  {
+        left: 250px;
+        top: 250px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    20%  {
+        left: 400px;
+        top: 600px; 
+        box-shadow: -5px 30px 50px rgba(0,0,0,0.5);
+    }
+    30%  {
+        left: 450px;
+        top: 400px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    40%  {
+        left: 600px;
+        top: 300px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    50%  {
+        left: 750px;
+        top: 400px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    60%  {
+        left: 800px;
+        top: 600px; 
+        box-shadow: -5px 30px 50px rgba(0,0,0,0.5);
+    }
+    70%  {
+        left: 850px;
+        top: 450px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    80%  {
+        left: 1000px;
+        top: 400px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    90%  {
+        left: 1100px;
+        top: 500px; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    100%{ 
+        left: 1200px;
+        top: 600px; 
+        box-shadow: -5px 30px 50px rgba(0,0,0,0.1);
+    }
+  }
+  
+@keyframes ball-spinning {
+        to {
+          transform:rotate(360deg);
+        }
+    }
+
+img {
+    animation: ball 7s cubic-bezier(1,1,0,0) 0s infinite  both,ball-spinning 2s linear infinite normal; 
+    position: relative;
+}
+         
+     
+     
